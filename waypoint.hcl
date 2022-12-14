@@ -1,17 +1,5 @@
 project = "hello-world"
 
-runner {
-  enabled = true
-
-  data_source "git" {
-    url = "https://github.com/snokpok/waypoint-ecs"
-  }
-
-  poll {
-    enabled = true
-  }
-}
-
 app "web" {
   build {
     use "docker" {}
@@ -29,9 +17,6 @@ app "web" {
     use "aws-ecs" {
       region = "us-west-1"
       memory = 512
-      logging {
-        region = "us-west-1"
-      }
     }
   }
 }
