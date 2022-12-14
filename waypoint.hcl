@@ -1,4 +1,4 @@
-project = "hello-world"
+project = "waypoint-ecs"
 
 app "web" {
   build {
