@@ -4,7 +4,7 @@ runner {
   enabled = true
 
   data_source "git" {
-    url = "https://github.com/nicholasjackson/waypoint-ecs"
+    url = "https://github.com/snokpok/waypoint-ecs"
   }
 
   poll {
